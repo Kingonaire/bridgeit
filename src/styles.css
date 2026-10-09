@@ -42,3 +42,43 @@
 .bridge-loading-state{color:var(--green);background:#f7faf4}
 .bridge-error-note{color:#8a3c36;background:#fff5f3;border-color:#efd5d0;flex-wrap:wrap}
 .bridge-error-note .bridge-secondary{min-height:36px;padding:8px 14px;font-size:11px}
+
+/* Our work impact story */
+.bridge-impact-story{max-width:1180px;margin:0 auto;padding:56px 32px 96px;color:var(--ink)}
+.bridge-impact-story-hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);gap:52px;align-items:start;margin-bottom:84px}
+.bridge-impact-story-intro h1{max-width:760px;margin:18px 0 28px;font-size:clamp(42px,6vw,82px);line-height:.98;letter-spacing:-.055em}
+.bridge-impact-story-intro p{max-width:720px;margin:0 0 18px;color:var(--muted);font-size:18px;line-height:1.68}
+.bridge-impact-story-intro .bridge-impact-story-lead{color:var(--ink);font-size:clamp(21px,2.2vw,30px);line-height:1.3;font-weight:650}
+.bridge-impact-story-hero-image{margin:0;position:sticky;top:28px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--paper)}
+.bridge-impact-story-hero-image img{display:block;width:100%;aspect-ratio:4 / 5;object-fit:cover}
+.bridge-impact-story-hero-image figcaption{padding:15px 18px;color:var(--muted);font-size:12px;line-height:1.4}
+.bridge-impact-story-section{display:grid;grid-template-columns:minmax(230px,.62fr) minmax(0,1.38fr);gap:56px;border-top:1px solid var(--line);padding:66px 0}
+.bridge-impact-story-section-heading{position:sticky;top:28px;align-self:start}
+.bridge-impact-story-section-heading h2{margin:16px 0 0;font-family:var(--serif);font-size:clamp(31px,3.4vw,54px);line-height:1.02;letter-spacing:-.045em}
+.bridge-impact-story-copy{max-width:720px}
+.bridge-impact-paragraph{margin:0;color:var(--muted);font-size:18px;line-height:1.72}
+.bridge-impact-paragraph.is-highlight{color:var(--ink);font-size:clamp(22px,2.25vw,31px);line-height:1.3;font-weight:650;letter-spacing:-.02em}
+.bridge-impact-image-slot{min-height:160px;margin:26px 0 38px;border:1px dashed #a9b8c8;border-radius:16px;background:linear-gradient(135deg,rgba(228,241,250,.75),rgba(255,255,255,.9));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#597189;text-align:center}
+.bridge-impact-image-slot span{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.bridge-impact-image-slot small{font-size:12px;color:var(--muted)}
+.bridge-impact-pillars{display:grid;gap:34px;margin-top:20px}
+.bridge-impact-pillar{border:1px solid var(--line);border-radius:18px;padding:28px;background:var(--paper)}
+.bridge-impact-pillar h3{margin:0 0 22px;font-family:var(--serif);font-size:clamp(25px,2.5vw,38px);line-height:1.05;letter-spacing:-.035em}
+.bridge-impact-pillar .bridge-impact-paragraph{font-size:16px;line-height:1.65}
+.bridge-impact-pillar .bridge-impact-paragraph.is-highlight{font-size:22px}
+.bridge-impact-cta{display:inline-flex;align-items:center;gap:12px;margin-top:10px;text-decoration:none}
+.bridge-impact-story-signoff{border-top:1px solid var(--line);padding:78px 0 0;text-align:center}
+.bridge-impact-story-signoff h2{max-width:780px;margin:18px auto 18px;font-family:var(--serif);font-size:clamp(38px,5vw,72px);line-height:1;letter-spacing:-.05em}
+.bridge-impact-story-signoff p{margin:0 auto 26px;color:var(--muted);font-size:18px}
+.bridge-impact-story-signoff .bridge-primary{display:inline-flex;text-decoration:none}
+@media (max-width:760px){
+  .bridge-impact-story{padding:34px 18px 70px}
+  .bridge-impact-story-hero{display:flex;flex-direction:column;gap:28px;margin-bottom:54px}
+  .bridge-impact-story-hero-image{position:static;width:100%}
+  .bridge-impact-story-section{display:block;padding:48px 0}
+  .bridge-impact-story-section-heading{position:static;margin-bottom:28px}
+  .bridge-impact-story-intro p,.bridge-impact-paragraph{font-size:16px;line-height:1.65}
+  .bridge-impact-paragraph.is-highlight{font-size:22px}
+  .bridge-impact-image-slot{min-height:132px;margin:20px 0 30px}
+  .bridge-impact-pillar{padding:22px 18px}
+}
