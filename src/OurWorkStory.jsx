@@ -264,13 +264,12 @@ function ImageSlot({ index }) {
   );
 }
 
-function StoryParagraphs({ paragraphs, highlights = [], startIndex = 0 }) {
+function StoryParagraphs({ paragraphs, highlights = [] }) {
   return paragraphs.map((paragraph, index) => {
     const isHighlight = highlights.includes(index);
     return (
-      <React.Fragment key={`${startIndex}-${index}-${paragraph.slice(0, 18)}`}>
+      <React.Fragment key={`${index}-${paragraph.slice(0, 18)}`}>
         <p className={isHighlight ? 'bridge-impact-paragraph is-highlight' : 'bridge-impact-paragraph'}>{paragraph}</p>
-        <ImageSlot index={startIndex + index + 1} />
       </React.Fragment>
     );
   });
@@ -287,9 +286,7 @@ export default function OurWorkStory() {
           <p className="bridge-impact-story-subtitle">Because no one deserves to live in a world that cannot hear them.</p>
           <p className="bridge-impact-story-lead">Every child deserves to feel safe. Every voice deserves to be understood. Every person deserves to belong.</p>
           <p>But sometimes, the greatest barriers people face are not the ones they were born with. They are the ones society has failed to remove.</p>
-          <ImageSlot index={++slotIndex} />
           <p>This is the story of how one visit to a school changed our understanding of inclusion, and how one child&apos;s accident inspired a mission much bigger than we ever imagined.</p>
-          <ImageSlot index={++slotIndex} />
         </div>
         <figure className="bridge-impact-story-hero-image">
           <img src="/assets/wesley-school-surulere.jpg" alt="Students of Wesley School Surulere" />
@@ -298,25 +295,26 @@ export default function OurWorkStory() {
       </section>
 
       {storySections.map((section) => {
-        const sectionStart = slotIndex;
-        slotIndex += section.paragraphs.length;
+        const sectionSlots = [1, 2, 3].map((position) => {
+          slotIndex += 1;
+          return <ImageSlot index={slotIndex} key={`${section.title}-image-${position}`} />;
+        });
         return (
           <section className="bridge-impact-story-section" key={section.title}>
             <div className="bridge-impact-story-section-heading">
               <span className="bridge-eyebrow">THE WORK BEHIND THE WORK</span>
               <h2>{section.title}</h2>
             </div>
+            <div className="bridge-impact-section-media">{sectionSlots}</div>
             <div className="bridge-impact-story-copy">
-              <StoryParagraphs paragraphs={section.paragraphs} highlights={section.highlights} startIndex={sectionStart} />
+              <StoryParagraphs paragraphs={section.paragraphs} highlights={section.highlights} />
               {section.pillars && (
                 <div className="bridge-impact-pillars">
                   {section.pillars.map((pillar) => {
-                    const pillarStart = slotIndex;
-                    slotIndex += pillar.body.length;
                     return (
                       <article className="bridge-impact-pillar" key={pillar.title}>
                         <h3>{pillar.title}</h3>
-                        <StoryParagraphs paragraphs={pillar.body} startIndex={pillarStart} />
+                        <StoryParagraphs paragraphs={pillar.body} />
                       </article>
                     );
                   })}

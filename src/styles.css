@@ -56,7 +56,9 @@
 .bridge-impact-story-section{display:grid;grid-template-columns:minmax(230px,.62fr) minmax(0,1.38fr);gap:56px;border-top:1px solid var(--line);padding:66px 0}
 .bridge-impact-story-section-heading{position:sticky;top:28px;align-self:start}
 .bridge-impact-story-section-heading h2{margin:16px 0 0;font-family:var(--serif);font-size:clamp(31px,3.4vw,54px);line-height:1.02;letter-spacing:-.045em}
-.bridge-impact-story-copy{max-width:720px}
+.bridge-impact-section-media{grid-column:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 0 34px}
+.bridge-impact-section-media .bridge-impact-image-slot{min-height:190px;margin:0}
+.bridge-impact-story-copy{grid-column:2;max-width:720px}
 .bridge-impact-paragraph{margin:0;color:var(--muted);font-size:18px;line-height:1.72}
 .bridge-impact-paragraph.is-highlight{color:var(--ink);font-size:clamp(22px,2.25vw,31px);line-height:1.3;font-weight:650;letter-spacing:-.02em}
 .bridge-impact-image-slot{min-height:160px;margin:26px 0 38px;border:1px dashed #a9b8c8;border-radius:16px;background:linear-gradient(135deg,rgba(228,241,250,.75),rgba(255,255,255,.9));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#597189;text-align:center}
@@ -78,6 +80,9 @@
   .bridge-impact-story-hero-image{position:static;width:100%}
   .bridge-impact-story-section{display:block;padding:48px 0}
   .bridge-impact-story-section-heading{position:static;margin-bottom:28px}
+  .bridge-impact-section-media{grid-column:auto;grid-template-columns:1fr;margin-bottom:28px}
+  .bridge-impact-section-media .bridge-impact-image-slot{min-height:132px}
+  .bridge-impact-story-copy{grid-column:auto}
   .bridge-impact-story-intro p,.bridge-impact-paragraph{font-size:16px;line-height:1.65}
   .bridge-impact-paragraph.is-highlight{font-size:22px}
   .bridge-impact-image-slot{min-height:132px;margin:20px 0 30px}
