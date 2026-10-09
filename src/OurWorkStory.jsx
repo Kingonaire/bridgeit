@@ -283,7 +283,8 @@ export default function OurWorkStory() {
       <section className="bridge-impact-story-hero">
         <div className="bridge-impact-story-intro">
           <span className="bridge-eyebrow">OUR WORK · OUR IMPACT</span>
-          <h1>Because no one deserves to live in a world that cannot hear them.</h1>
+          <h1>Include Me Surulere</h1>
+          <p className="bridge-impact-story-subtitle">Because no one deserves to live in a world that cannot hear them.</p>
           <p className="bridge-impact-story-lead">Every child deserves to feel safe. Every voice deserves to be understood. Every person deserves to belong.</p>
           <p>But sometimes, the greatest barriers people face are not the ones they were born with. They are the ones society has failed to remove.</p>
           <ImageSlot index={++slotIndex} />
