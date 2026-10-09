@@ -1,0 +1,144 @@
+[
+  {
+    "asset": "/assets/what-is-your-name.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/lets-go-get-food.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/lets-hangout.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/mary-olaoye-abosede.jpg",
+    "ok": true
+  },
+  {
+    "asset": "/assets/are-you-single.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/you-are-amazing.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/bridgeit-logo.png",
+    "ok": true
+  },
+  {
+    "asset": "/assets/see-you-soon.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/bridgeit-card-stack.png",
+    "ok": true
+  },
+  {
+    "asset": "/favicon.svg",
+    "ok": true
+  },
+  {
+    "asset": "/assets/i-like-your-energy.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/lets-hangout.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/im-hungry.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/good-evening.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/take-a-picture-with-me.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/what-did-you-just-say.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/teach-me-a-sign.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/say-it-again-but-slowly.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/you-are-amazing.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/youre-officially-my-friend-now.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/can-i-get-your-number.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/i-missed-you.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/good-evening.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/i-missed-you.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/see-you-soon.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/take-a-picture-with-me.mov",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "asset": "/assets/you-are-funny.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/im-hungry.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/youre-officially-my-friend-now.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/can-i-get-your-number.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/are-you-always-this-cool.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/lets-go-get-food.mp4",
+    "ok": true
+  },
+  {
+    "asset": "/assets/adeniyi-olajide-temitope.jpg",
+    "ok": true
+  }
+]
